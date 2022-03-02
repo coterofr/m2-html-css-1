@@ -1,0 +1,15 @@
+h1 {
+  color: black;
+  font-family: Arial;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  color: #1f1f1f;
+  background: linear-gradient(to bottom, #bada55, #c0ffee);
+}
+
+a {
+  transition: transform 1s;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "app-module-2",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 4 versions, Firefox ESR",
+  "scripts": {
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "prefix": "postcss ./src/css/styles.css --use autoprefixer -d ./src/css/prefixed/",
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.7",
+    "postcss-preset-env": "^7.4.2",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss-cli": "^9.1.0"
+  }
+}
